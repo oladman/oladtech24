@@ -1,0 +1,61 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Mobile navigation styles */
+  .mobile-nav {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  
+  .mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-nav ul li {
+    border-bottom: 1px solid #444;
+  }
+  
+  .mobile-nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in;
+  }
+  
+  .mobile-nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Toggle active state */
+  .nav-open {
+    max-height: 300px; /* Adjust this height if needed */
+    opacity: 1;
+  }
+  
